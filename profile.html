@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+      <html lang="en">
+        <head>
+    <title>Welcome To Registration Form</title>
+  
+    <script type="text/javascript">
+         function registration()
+      {
+  
+          var firstname= document.getElementById("t1").value;
+          console.log(firstname);
+          var lastname= document.getElementById("t2").value;
+          console.log(lastname);
+          var id= document.getElementById("t3").value;
+          console.log(id);
+          var age= document.getElementById("t4").value; 
+          console.log(age);          
+          var gender= document.getElementById("t5").value;
+          console.log(gender);
+          var qualification= document.getElementById("t6").value;
+          console.log(qualification);
+          var company= document.getElementById("t5").value;
+          console.log(company);
+          var designation= document.getElementById("t5").value;
+          console.log(designation);
+
+      }
+    </script>
+    </head>
+  
+      <body style="background-color:aqua">
+      <div id="main">
+      <div class="h-tag">
+      <h2 align ='center'>Register Your Account</h2>
+      </div>
+      <div class="login">
+      <table cellspacing="2" align="center" cellpadding="8" border="0">
+      <tr>
+      <td align="right">Employee First Name:</td>
+      <td><input type="text" placeholder="Enter first name" id="t1" class="tb" /></td>
+      </tr>
+      <tr>
+      <td align="right">Last Name :</td>
+      <td><input type="text" placeholder="Enter last name" id="t2" class="tb" /></td>
+      </tr>
+      <tr>
+      <td align="right">Id</td>
+      <td><input type="text" placeholder="Enter Id" id="t3" class="tb" /></td>
+      </tr>
+      <tr>
+      <td align="right">Age :</td>
+      <td><input type="text" placeholder="Enter Age" id="t4" class="tb" /></td>
+      </tr>
+      <tr>
+      <td align="right">Gender :</td>
+      <td><input type="text" placeholder="Enter Gender" id="t5" class="tb" /></td>
+      </tr>
+      <tr>
+      <td align="right">Qualification</td>
+      <td><input type="text" placeholder="Enter Qualification" id="t6" class="tb" /></td>
+      </tr>
+      <tr>
+        <td align="right">Company Name</td>
+        <td><input type="text" placeholder="Enter Company Name" id="t7" class="tb" /></td>
+        </tr>
+        <tr>
+            <td align="right">Designation</td>
+            <td><input type="text" placeholder="Enter Designation" id="t8" class="tb" /></td>
+            </tr>
+      <td></td>
+      <td>
+      <input type="submit" value="Create Account" class="btn" onclick="registration()" /></td>
+      </tr>
+      </table>
+      </div>
+      </div>
+      </body>
+      </html>
+

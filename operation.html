@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+<script>
+var numOne, numTwo, res, temp;
+function fun()
+{
+  numOne = parseInt(document.getElementById("one").value);
+  console.log('num1 :',numOne);
+  numTwo = parseInt(document.getElementById("two").value);
+  console.log('num2 :',numTwo);
+  if(numOne && numTwo)
+  {
+    temp = document.getElementById("res");
+    temp.style.display ="block";
+    res = numOne + numTwo;
+    console.log('add =',res);
+    document.getElementById("add").value = res;
+    res = numOne - numTwo;
+    console.log('sub =',res);
+    document.getElementById("subtract").value = res;
+    res = numOne * numTwo;
+    console.log('multiply =',res);
+    document.getElementById("multiply").value = res;
+    res = numOne / numTwo;
+    console.log('division =',res);
+    document.getElementById("divide").value = res;
+  }
+}
+</script>
+</head>
+<body style="background-color:aqua ;">
+
+<p id="input">Enter First Number: <input id="one">
+<br/><br/>
+Enter Second Number: <input id="two"></p>
+<p><button onclick="fun()">Add, Subtract, Multiply, Divide</button></p>
+<p id="res" style="display:none;">
+Addition Result = <input id="add" readonly><br/><br/>
+Subtraction Result = <input id="subtract" readonly><br/><br/>
+Multiplication Result = <input id="multiply" readonly><br/><br/>
+Division Result = <input id="divide" readonly></p>
+
+</body>
+</html>

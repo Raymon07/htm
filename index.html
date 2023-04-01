@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+      <html lang="en">
+        <head>
+    <title>My Profile</title>
+  
+    <script type="text/javascript">
+         function registration()
+      {
+          var Name= document.getElementById("t0").value;
+          document.getElementById("p0").innerHTML = Name;
+          var Class= document.getElementById("t1").value;
+          document.getElementById("p1").innerHTML = Class;
+          var Qualification= document.getElementById("t2").value;
+          document.getElementById("p2").innerHTML = Qualification;
+          var Photo= document.getElementById("t3").value;
+          document.getElementById("p3").innerHTML =Photo;
+          var Address= document.getElementById("t4").value; 
+          document.getElementById("p4").innerHTML =Address;       
+
+      }
+    </script>
+    </head>
+  
+      <body style="background-image: url(https://cdn.wallpapersafari.com/56/94/joPrET.gif); background-repeat: no-repeat;background-size: cover; color: white; font-size: 30px;">
+
+        <div id="main">
+      <div class="h-tag">
+      <h2 style="margin-left: 700px;">My Profile</h2>
+      </div>
+      <div class="login">
+      <table cellspacing="2" align="center" cellpadding="8" border="0">
+        <tr>
+            <td align="right">Name :</td>
+            <td><input type="text" placeholder="Name" id="t0" class="tb" /></td>
+            </tr>
+      <tr>
+      <td align="right">Class:</td>
+      <td><input type="text" placeholder="Class" id="t1" class="tb" /></td>
+      </tr>
+      <tr>
+      <td align="right">Qualification :</td>
+      <td><input type="text" placeholder="Qualification" id="t2" class="tb" /></td>
+      </tr>
+      <tr>
+      <td align="right">Photo :</td>
+      <td><input type="file"  placeholder="Photo" id="t3" class="tb" /></td>
+      </tr>
+      <tr>
+      <td align="right">Address :</td>
+      <td><input type="Address" placeholder="Address" id="t4" class="tb" /></td>
+      </tr>
+      
+      <td></td>
+      <td>
+      <input type="submit" value="Submit" class="btn" onclick="registration()"/></td>
+      </tr>
+      </table>
+      </div>
+      </div>
+      <div align="center">
+      <p id="p0"></p>
+      <p id="p1"></p>
+      <p id="p2"></p>
+      <p id="p3"></p>
+      <p id="p4"></p>
+      </div>
+      
+      </body>
+      </html>
